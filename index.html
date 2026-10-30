@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neharuma Rowshan | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-white/80 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800">
+
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#home" class="text-2xl font-bold gradient-text">
+            Neharuma Portfolio
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#certificates" class="nav-link">Certificates</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+            <!-- Theme Button -->
+            <button id="themeToggle"
+                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700">
+                <i data-lucide="moon"></i>
+            </button>
+
+        </div>
+
+        <!-- Mobile Buttons -->
+        <div class="md:hidden flex items-center gap-2">
+
+            <button id="mobileTheme"
+                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button id="menuBtn"
+                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+         class="hidden md:hidden px-6 pb-5">
+
+        <div class="flex flex-col gap-4">
+
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#research" class="mobile-link">Research</a>
+            <a href="#certificates" class="mobile-link">Certificates</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home"
+         class="min-h-screen flex items-center pt-24 px-6">
+
+    <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Text -->
+
+        <div class="reveal">
+
+            <p class="text-indigo-600 dark:text-indigo-400 font-semibold mb-3">
+                Hello, I'm
+            </p>
+
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                <span class="gradient-text">
+                  Neharuma  Rowshan
+                </span>
+            </h1>
+
+            <h2 class="text-2xl md:text-3xl font-semibold mt-5">
+                I'm a
+                <span id="typing"
+                      class="text-indigo-600 dark:text-indigo-400">
+                </span>
+            </h2>
+
+            <p class="mt-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-xl">
+                Computer Science student passionate about Artificial Intelligence,
+                Machine Learning, Cybersecurity, Web Development and Research.
+                I enjoy building practical projects and exploring new technologies.
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="flex flex-wrap gap-4 mt-8">
+
+                <a href="#projects"
+                   class="btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact"
+                   class="btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <!-- Social Icons -->
+
+            <div class="flex gap-4 mt-8">
+
+                <a href=" https://github.com/NeharumaRowshan"
+                   target="_blank"
+                   class="social-btn">
+                    <i data-lucide="github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/neharuma-rowshan-81663a286/"
+                   target="_blank"
+                   class="social-btn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+
+                <a href="mailto:neharuma.rowshan@gmail.com"
+                   class="social-btn">
+                    <i data-lucide="mail"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Profile Image -->
+
+        <div class="flex justify-center reveal">
+
+            <div class="profile-wrapper">
+
+                <!-- Replace profile.jpeg with your image -->
+                <img src="images/profile.jpeg"
+                     alt="Neharuma Rowshan"
+                     class="profile-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about"
+         class="section bg-white dark:bg-gray-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                About Me
+            </p>
+
+            <h2>
+                Who I Am
+            </h2>
+
+            <p>
+                A little information about my background and interests.
+            </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-10 mt-12">
+
+            <!-- About Text -->
+
+            <div class="glass-card reveal">
+
+                <h3 class="text-2xl font-bold mb-5">
+                    Computer Science Student
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
+                    I am a Computer Science student interested in solving real-world
+                    problems through technology. My academic interests include
+                    Artificial Intelligence, Machine Learning, Cybersecurity,
+                    Web Development and Data Science.
+                </p>
+
+                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Alongside my academic studies, I enjoy working on software
+                    projects, research activities and learning new technologies.
+                    My goal is to continuously improve my technical and research
+                    skills.
+                </p>
+
+            </div>
+
+
+            <!-- Skills -->
+
+            <div class="glass-card reveal">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    My Skills
+                </h3>
+
+                <div class="flex flex-wrap gap-3">
+
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">Git & GitHub</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education"
+         class="section">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                Education
+            </p>
+
+            <h2>
+                My Academic Journey
+            </h2>
+
+        </div>
+
+
+        <div class="timeline mt-12">
+
+            <!-- BSc -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span class="date-badge">
+                        2022 - Present
+                    </span>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Bachelor of Science in Computer Science & Engineering
+                    </h3>
+
+                    <p class="text-indigo-600 dark:text-indigo-400 mt-2 font-semibold">
+                        International Islamic University Chittagong
+                    </p>
+
+                    <p class="text-gray-600 dark:text-gray-400 mt-3">
+                        Studying Computer Science and Engineering with interests
+                        in Artificial Intelligence, Machine Learning,
+                        Cybersecurity and Research.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HSC -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span class="date-badge">
+                        2020
+                    </span>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Higher Secondary Certificate
+                    </h3>
+
+                    <p class="text-indigo-600 dark:text-indigo-400 mt-2 font-semibold">
+                        Chittagong Govt. Women College
+                    </p>
+<p class="text-indigo-600 dark:text-indigo-400 mt-2 font-semibold">
+                        GPA: 5.00
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SSC -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <span class="date-badge">
+                        2018
+                    </span>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Secondary School Certificate
+                    </h3>
+
+                    <p class="text-indigo-600 dark:text-indigo-400 mt-2 font-semibold">
+                        Bangladesh Mahila Samity Girls' High School
+                    </p>
+                    <p class="text-indigo-600 dark:text-indigo-400 mt-2 font-semibold">
+                        GPA: 5.00
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects"
+         class="section bg-white dark:bg-gray-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                Projects
+            </p>
+
+            <h2>
+                My Recent Work
+            </h2>
+
+            <p>
+                Some of the academic and personal projects I have worked on.
+            </p>
+
+        </div>
+
+
+        <!-- Project Filters -->
+
+        <div class="flex flex-wrap justify-center gap-3 mt-10 mb-10">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="web">
+                Web
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="ai">
+                AI
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="security">
+                Security
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="other">
+                Other
+            </button>
+
+        </div>
+
+
+        <!-- Project Grid -->
+
+        <div id="projectGrid"
+             class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+            <!-- Project 1 -->
+
+            <div class="project-card reveal"
+                 data-category="web">
+
+                <div class="project-image">
+
+                    <!-- Replace this image -->
+                    <img src="images/project1.png"
+                         alt="AwesomeGear">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Web Development
+                    </span>
+
+                    <h3 class="project-title">
+                        AwesomeGear
+                    </h3>
+
+                    <p class="project-description">
+                        An electronics e-commerce website developed as a
+                        group project with product browsing and shopping features.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Stripe</span>
+
+                    </div>
+
+                    <a href="https://github.com/NeharumaRowshan/AwesomeGear"
+                       class="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card reveal"
+                 data-category="ai">
+
+                <div class="project-image">
+
+                    <img src="images/project2.jpg"
+                         alt="Emotion Based Music Generation">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Artificial Intelligence
+                    </span>
+
+                    <h3 class="project-title">
+                        Emotion-Based Music Generation
+                    </h3>
+
+                    <p class="project-description">
+                        An AI project that predicts human emotion from facial
+                        images and generates music based on the detected emotion.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ResNet50V2</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Music21</span>
+
+                    </div>
+
+                    <a href="https://colab.research.google.com/drive/113GmzgYfxue4jrkKUNlsoTZtgiVfy-9h?usp=sharing"
+                       class="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="project-card reveal"
+                 data-category="security">
+
+                <div class="project-image">
+
+                    <img src="images/project3.webp"
+                         alt="Secure File Transfer System">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Cybersecurity
+                    </span>
+
+                    <h3 class="project-title">
+                        Secure File Transfer System
+                    </h3>
+
+                    <p class="project-description">
+                        A secure file transfer application designed to provide
+                        protected communication and file sharing.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Kali Linux</span>
+                        <span class="tech-tag">Security</span>
+
+                    </div>
+
+                    <a href="https://github.com/NeharumaRowshan/Secure-File-Transfer-Application-Custom-Protocol-"
+                       class="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 4 -->
+
+            <div class="project-card reveal"
+                 data-category="other">
+
+                <div class="project-image">
+
+                    <img src="images/project4.jpg"
+                         alt="Smart Elevator System">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Software System
+                    </span>
+
+                    <h3 class="project-title">
+                        Smart Elevator System
+                    </h3>
+
+                    <p class="project-description">
+                        A smart elevator simulation with request queues,
+                        priority management and emergency mode.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">OS</span>
+
+                    </div>
+
+                    <a href="https://github.com/Zarin-Tasnim-Tithi/Smart-Elevator-System"
+                       class="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 5 -->
+
+            <div class="project-card reveal"
+                 data-category="security">
+
+                <div class="project-image">
+
+                    <img src="images/project5.webp"
+                         alt="Firewall Simulator">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Cybersecurity
+                    </span>
+
+                    <h3 class="project-title">
+                        Firewall Simulator
+                    </h3>
+
+                    <p class="project-description">
+                        A Python-based firewall simulation system with rule
+                        management, packet simulation and activity logging.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Security</span>
+
+                    </div>
+
+                    <a href="https://github.com/NeharumaRowshan/Firewall-Simulator"
+                       class="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 6 -->
+
+            <div class="project-card reveal"
+                 data-category="other">
+
+                <div class="project-image">
+
+                    <img src="images/Project6.webp"
+                         alt="3D House Architecture">
+
+                </div>
+
+                <div class="p-6">
+
+                    <span class="project-category">
+                        Computer Graphics
+                    </span>
+
+                    <h3 class="project-title">
+                        3D House Architecture
+                    </h3>
+
+                    <p class="project-description">
+                        A 3D house architecture project created using
+                        computer graphics techniques and OpenGL.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-5">
+
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OpenGL</span>
+                        <span class="tech-tag">3D Graphics</span>
+
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        View Project
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESEARCH ================= -->
+
+<section id="research"
+         class="section">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                Research
+            </p>
+
+            <h2>
+                Research Interests
+            </h2>
+
+            <p>
+                Areas I am currently exploring through academic research.
+            </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+
+
+            <!-- Research 1 -->
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i data-lucide="network"></i>
+                </div>
+
+                <h3>
+                    Ethereum Fraud Detection
+                </h3>
+
+                <p>
+                    A hybrid real-time GNN-based machine learning framework
+                    with Explainable AI for fraud detection in the Ethereum
+                    blockchain.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="tech-tag">GCN</span>
+                    <span class="tech-tag">GAT</span>
+                    <span class="tech-tag">GraphSAGE</span>
+                    <span class="tech-tag">XAI</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Research 2 -->
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <h3>
+                    IoT Intrusion Detection
+                </h3>
+
+                <p>
+                    Research interest in machine learning-based intrusion
+                    detection systems for IoT and network security.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">IoT</span>
+                    <span class="tech-tag">Security</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Research 3 -->
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i data-lucide="brain"></i>
+                </div>
+
+                <h3>
+                    Explainable AI
+                </h3>
+
+                <p>
+                    Exploring methods that make machine learning models
+                    easier to understand and interpret.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="tech-tag">XAI</span>
+                    <span class="tech-tag">SHAP</span>
+                    <span class="tech-tag">ML</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Research 4 -->
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i data-lucide="cpu"></i>
+                </div>
+
+                <h3>
+                    Deep Learning Applications
+                </h3>
+
+                <p>
+                    Exploring practical applications of deep learning in
+                    computer vision, cybersecurity and intelligent systems.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">CNN</span>
+                    <span class="tech-tag">AI</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+
+<section id="certificates"
+         class="section bg-white dark:bg-gray-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                Certificates
+            </p>
+
+            <h2>
+                My Certifications
+            </h2>
+
+            <p>
+                Certificates and achievements from courses, training and
+                learning activities.
+            </p>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+
+            <!-- Certificate 1 -->
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-image">
+
+                    <!-- Replace certificate-1.jpg -->
+                    <img src="images/Certificates/Certificate1.png"
+                         alt="Certificate 1">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3>
+                        Certificate Name
+                    </h3>
+
+                    <p class="certificate-org">
+                        Organization Name
+                    </p>
+
+                    <p class="certificate-date">
+                        2026
+                    </p>
+
+                    <a href="images/Certificates/Certificate1.png"
+                       target="_blank"
+                       class="certificate-btn">
+
+                        <i data-lucide="eye"></i>
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Certificate 2 -->
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-image">
+
+                    <img src="images/Certificates/Certificate2.png"
+                         alt="Certificate 2">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3>
+                        Certificate Name
+                    </h3>
+
+                    <p class="certificate-org">
+                        Organization Name
+                    </p>
+
+                    <p class="certificate-date">
+                        2026
+                    </p>
+
+                    <a href="images/Certificates/certificate2.png"
+                       target="_blank"
+                       class="certificate-btn">
+
+                        <i data-lucide="eye"></i>
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Certificate 3 -->
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-image">
+
+                    <img src="images/Certificates/Neharuma Rowshan.jpg"
+                         alt="Certificate 3">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3>
+                        Certificate Name
+                    </h3>
+
+                    <p class="certificate-org">
+                        Organization Name
+                    </p>
+
+                    <p class="certificate-date">
+                        2026
+                    </p>
+
+                    <a href="images/Certificates/Neharuma Rowshan.jpg"
+                       target="_blank"
+                       class="certificate-btn">
+
+                        <i data-lucide="eye"></i>
+                        View Certificate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="section">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="section-title reveal">
+
+            <p class="section-small-title">
+                Contact
+            </p>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                Have a project, research idea or simply want to say hello?
+                Feel free to contact me.
+            </p>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-10 mt-12">
+
+
+            <!-- Contact Information -->
+
+            <div class="glass-card reveal">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    Contact Information
+                </h3>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+
+                    <div>
+
+                        <p class="contact-label">
+                            Email
+                        </p>
+
+                        <a href="mailto:neharuma.rowshan@gmail.com">
+                            neharmua.rowshan@gmail.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i data-lucide="github"></i>
+                    </div>
+
+                    <div>
+
+                        <p class="contact-label">
+                            GitHub
+                        </p>
+
+                        <a href="https://github.com/NeharumaRowshan"
+                           target="_blank">
+                            github.com/NeharumaRowshan
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i data-lucide="linkedin"></i>
+                    </div>
+
+                    <div>
+
+                        <p class="contact-label">
+                            LinkedIn
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/neharuma-rowshan-81663a286/"
+                           target="_blank">
+                            linkedin.com/in/neharuma-rowshan-81663a286
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <div class="glass-card reveal">
+
+                <form id="contactForm">
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+
+                        <div>
+
+                            <label>
+                                Your Name
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   placeholder="Your name"
+                                   required>
+
+                        </div>
+
+
+                        <div>
+
+                            <label>
+                                Your Email
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Your email"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mt-5">
+
+                        <label>
+                            Subject
+                        </label>
+
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               placeholder="Message subject"
+                               required>
+
+                    </div>
+
+
+                    <div class="mt-5">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="Write your message..."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                            id="sendBtn"
+                            class="send-btn mt-6">
+
+                        <i data-lucide="send"></i>
+
+                        <span>
+                            Send Message
+                        </span>
+
+                    </button>
+
+
+                    <p id="formMessage"
+                       class="mt-4 text-center">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="border-t border-gray-200 dark:border-gray-800 py-8">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <p class="text-gray-600 dark:text-gray-400">
+
+            © <span id="year"></span>
+            Neharuma Rowshan.
+            All rights reserved.
+
+        </p>
+
+
+    </div>
+
+</footer>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "1EuLFIYdCVdKPh7KT"
+    });
+</script>
+
+<script src="script.js"></script>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="script.js"></script>
+
+<!-- Lucide Icons -->
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
